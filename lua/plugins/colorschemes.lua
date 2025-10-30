@@ -1,15 +1,29 @@
+-- local palettes = {
+-- 	carbonfox = {
+-- 		-- sel0 = "#2b3b51", -- Popup bg, visual selection bg
+-- 		sel0 = "#484848",
+-- 		-- sel0 = "#3e4a5b", -- Popup bg, visual selection bg
+-- 	},
+-- }
+
 return {
-    "sainnhe/gruvbox-material",
-    enabled = true,
-    priority = 1000,
-    config = function()
-        vim.g.gruvbox_material_transparent_background = 1
-        vim.g.gruvbox_material_foreground = "mix"
-        vim.g.gruvbox_material_background = "hard"
-        vim.g.gruvbox_material_ui_contrast = "high"
-        vim.g.gruvbox_material_float_style = "bright"
-        vim.g.gruvbox_material_statusline_style = "material"
-        vim.g.gruvbox_material_cursor = "auto"
-        vim.cmd.colorscheme("gruvbox-material")
-    end,
+	{ "vague2k/vague.nvim", name = "vague", lazy = false, priority = 1000, opts = {} },
+	{
+		"folke/tokyonight.nvim",
+		lazy = false,
+		priority = 1000,
+		opts = {},
+	},
+	-- {
+	-- 	"EdenEast/nightfox.nvim",
+	-- 	name = "nightfox",
+	-- 	lazy = false,
+	-- 	priority = 1000,
+	-- 	opts = {
+	-- 		palettes = palettes,
+	-- 		options = {
+	-- 			transparent = true,
+	-- 		},
+	-- 	},
+	-- },
 }

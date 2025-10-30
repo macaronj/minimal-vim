@@ -5,7 +5,12 @@ return {
 		require("conform").setup({
 			formatters_by_ft = {
 				lua = { "stylua" },
-				go = { "goimports", "golines", "gofmt" },
+				markdown = { "prettier", lsp_format = "fallback" },
+				css = { "prettier", lsp_format = "fallback" },
+				php = { "pint", "php-cs-fixer", lsp_format = "fallback" },
+			},
+			default_format_opts = {
+				lsp_format = "fallback",
 			},
 			-- format_on_save = {
 			--     lsp_fallback = true,
