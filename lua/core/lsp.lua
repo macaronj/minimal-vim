@@ -8,7 +8,8 @@ vim.lsp.enable({
 	"css_ls",
 	"ts_ls",
 	-- "laravel_ls",
-  "devsense_ls"
+  "devsense_ls",
+  "go_ls"
 })
 
 vim.diagnostic.config({

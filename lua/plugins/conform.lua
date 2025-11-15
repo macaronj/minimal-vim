@@ -8,6 +8,7 @@ return {
 				markdown = { "prettier", lsp_format = "fallback" },
 				css = { "prettier", lsp_format = "fallback" },
 				php = { "pint", "php-cs-fixer", lsp_format = "fallback" },
+				go = { "gofmt", lsp_format = "fallback" },
 			},
 			default_format_opts = {
 				lsp_format = "fallback",
